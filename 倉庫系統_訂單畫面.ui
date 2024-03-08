@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_4</class>
+ <widget class="QDialog" name="Dialog_4">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>21</x>
+     <y>41</y>
+     <width>450</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>450</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>450</width>
+     <height>200</height>
+    </size>
+   </property>
+   <row>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>訂單ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>訂單客戶</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>訂單品項ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>訂單數量</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>526</x>
+     <y>41</y>
+     <width>450</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>450</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>450</width>
+     <height>200</height>
+    </size>
+   </property>
+   <row>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </row>
+   <column>
+    <property name="text">
+     <string>訂單客戶</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>訂單品項</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>訂單數量</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>庫存數量</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>120</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>訂單列表</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>10</y>
+     <width>191</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>訂單和品項搜尋列表</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_search_all_order">
+   <property name="geometry">
+    <rect>
+     <x>365</x>
+     <y>10</y>
+     <width>104</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>訂單列表更新</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>238</x>
+     <y>269</y>
+     <width>71</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>訂單數量:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>269</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>訂單品項ID:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>246</y>
+     <width>120</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>新增訂單資料</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_new_order_name">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>300</y>
+     <width>100</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_new_order_item_id">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>300</y>
+     <width>100</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_new_order_amount">
+   <property name="geometry">
+    <rect>
+     <x>238</x>
+     <y>300</y>
+     <width>70</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>70</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>269</y>
+     <width>71</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>訂單客戶:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_new_order">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>299</y>
+     <width>75</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft JhengHei UI</family>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>新增訂單</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>368</y>
+     <width>71</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>訂單ID</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_del_order_name">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>399</y>
+     <width>100</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>345</y>
+     <width>120</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>刪除訂單資料</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>368</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>訂單客戶:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_del_order">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>398</y>
+     <width>75</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft JhengHei UI</family>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>刪除訂單</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_del_order_id">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>399</y>
+     <width>100</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>269</y>
+     <width>71</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>訂單客戶:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_search_order_id">
+   <property name="geometry">
+    <rect>
+     <x>638</x>
+     <y>300</y>
+     <width>100</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>528</x>
+     <y>246</y>
+     <width>191</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>搜尋訂單和品項資料</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>638</x>
+     <y>269</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>訂單品項ID:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_search_special_order">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>299</y>
+     <width>120</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft JhengHei UI</family>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>指定搜尋訂單</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_search_order_name">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>300</y>
+     <width>100</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_search_all_order_item">
+   <property name="geometry">
+    <rect>
+     <x>853</x>
+     <y>10</y>
+     <width>121</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>150</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>全部訂單搜尋</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>7</y>
+     <width>481</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#9D9D9D</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_goto_warehouse">
+   <property name="geometry">
+    <rect>
+     <x>886</x>
+     <y>400</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>倉庫系統</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_return_login">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>400</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>100</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>返回登入</string>
+   </property>
+  </widget>
+  <zorder>label_21</zorder>
+  <zorder>tableWidget</zorder>
+  <zorder>tableWidget_2</zorder>
+  <zorder>label_22</zorder>
+  <zorder>label_23</zorder>
+  <zorder>pushButton_search_all_order</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_2</zorder>
+  <zorder>lineEdit_new_order_name</zorder>
+  <zorder>lineEdit_new_order_item_id</zorder>
+  <zorder>lineEdit_new_order_amount</zorder>
+  <zorder>label_4</zorder>
+  <zorder>pushButton_new_order</zorder>
+  <zorder>label_6</zorder>
+  <zorder>lineEdit_del_order_name</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_8</zorder>
+  <zorder>pushButton_del_order</zorder>
+  <zorder>lineEdit_del_order_id</zorder>
+  <zorder>label_9</zorder>
+  <zorder>lineEdit_search_order_id</zorder>
+  <zorder>label_10</zorder>
+  <zorder>label_11</zorder>
+  <zorder>pushButton_search_special_order</zorder>
+  <zorder>lineEdit_search_order_name</zorder>
+  <zorder>pushButton_search_all_order_item</zorder>
+  <zorder>pushButton_goto_warehouse</zorder>
+  <zorder>pushButton_return_login</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_new_order_name</tabstop>
+  <tabstop>lineEdit_new_order_item_id</tabstop>
+  <tabstop>lineEdit_new_order_amount</tabstop>
+  <tabstop>pushButton_new_order</tabstop>
+  <tabstop>lineEdit_del_order_id</tabstop>
+  <tabstop>lineEdit_del_order_name</tabstop>
+  <tabstop>pushButton_del_order</tabstop>
+  <tabstop>lineEdit_search_order_name</tabstop>
+  <tabstop>lineEdit_search_order_id</tabstop>
+  <tabstop>pushButton_search_special_order</tabstop>
+  <tabstop>pushButton_search_all_order</tabstop>
+  <tabstop>pushButton_search_all_order_item</tabstop>
+  <tabstop>pushButton_return_login</tabstop>
+  <tabstop>pushButton_goto_warehouse</tabstop>
+  <tabstop>tableWidget</tabstop>
+  <tabstop>tableWidget_2</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
