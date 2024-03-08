@@ -17,7 +17,7 @@ class UserModel:
             host='127.0.0.1',
             port=3306,
             user='root',
-            password='qwer0147@Q@',
+            password='qwer@Q@',
             database='web_test',
             charset="utf8",
         )
@@ -35,7 +35,7 @@ class UserModel:
             host='127.0.0.1',
             port=3306,
             user='root',
-            password='qwer0147@Q@',
+            password='qwer@Q@',
             database='web_test',
             charset="utf8",
         )
